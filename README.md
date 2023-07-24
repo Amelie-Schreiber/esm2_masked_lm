@@ -1,2 +1,2 @@
 # esm2_masked_lm
-Various Masked LM Ideas
+Various masked LM ideas using EMS-2. 
