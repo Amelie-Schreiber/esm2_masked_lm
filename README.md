@@ -7,4 +7,8 @@ Various masked LM ideas using [EMS-2](https://huggingface.co/docs/transformers/m
 
 - [scoring_mutations](https://github.com/Amelie-Schreiber/esm2_masked_lm/blob/main/scoring_mutations.ipynb) computes the `masked_marginal_score`, the `wild_type_marginal_score`, the `mutant_type_marginal_score`, and the `pseudolikelihood_score` for a list of mutated sequences predicted to be the most and least likely by ESM-2 based on a fixed wild-type sequences, and with a fixed target mutation sequence. This is closely related to the previous notebook, and finishes implementing the scoring functions mentioned in [Language models enable zero-shot prediction of the effects of mutations on protein function](https://www.biorxiv.org/content/10.1101/2021.07.09.450648v2) using ESM-2. You can swap out `facebook/esm2_t6_8M_UR50D` for one of the [other larger models](https://huggingface.co/facebook/esm2_t6_8M_UR50D).
   
-- [sequence_classification](https://github.com/Amelie-Schreiber/esm2_masked_lm/blob/main/sequence_classification.ipynb) builds a basic protein sequence classifier with three labels for enzymes, receptor proteins, and structural proteins. It uses the `facebook/esm2_t6_8M_UR50D` and thus is lightweight and easy to train, yet accurate. 
+- [sequence_classification](https://github.com/Amelie-Schreiber/esm2_masked_lm/blob/main/sequence_classification.ipynb) builds a basic protein sequence classifier with three labels for enzymes, receptor proteins, and structural proteins. It uses the `facebook/esm2_t6_8M_UR50D` and thus is lightweight and easy to train, yet accurate.
+
+- [residue_classification](https://github.com/Amelie-Schreiber/esm2_masked_lm/blob/main/residue_classification.ipynb) trains a small residue classifier using `facebook/esm2_t6_8M_UR50D` to classify residues into three classes: Exposed to Solvent, Binding Site, or Transmembrane Region. 
+
+  
